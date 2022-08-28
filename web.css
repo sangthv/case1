@@ -1,0 +1,331 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: Arial,Helvetica,sans-serif;
+}
+.than{
+    width: 1350px;
+    margin: 0 auto;
+}
+li{
+    list-style:none ;
+    margin-top: 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    justify-content: space-between;
+    padding:0 20px;
+    height: 70px;
+    align-items: center;
+    background-color: tomato;
+}
+.logo{
+    width: 100px;
+    padding:0 15px 0px;
+}
+.menu{
+    flex: 3;
+    display: flex;
+}
+.menu > li {
+    padding:0 25px;
+    position: relative;
+}
+.menu >li:hover .submenu {
+    visibility: visible;
+    top: 45px;
+}
+.submenu {
+    position: absolute;
+    width: 150px;
+    border: 1px solid#ccc;
+    padding: 10px 0 10px 20px;
+    visibility: hidden;
+    top: 60px;
+    transition: 0.5s;
+    z-index: 1;
+    background: #fff;
+}
+.submenu {
+    font-weight: normal;
+}
+.menu >li> a {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    line-height: 17px;
+}
+.other {
+    margin-top: 15px;
+    display: flex;
+}
+.other li {
+    padding: 5px 15px 20px;
+    font-size: 20px;
+}
+.other input {
+    padding-right: 45px;
+}
+.other span{
+    color: #fff;
+    position: absolute;
+    background: deeppink;
+    width: 17px;
+    height: 17px;
+    font-size: 18px;
+    line-height: 18px;
+    border-radius: 60%;
+    text-align: center;
+}
+.other img{
+    cursor: pointer;
+}
+.other giohang{
+    padding: 50px 0;
+}
+/*............content...........*/
+
+.Slider{
+    border-bottom: 2px solid #eeeaea;
+    overflow: hidden;
+    height: 500px;
+ }
+.Slider img{
+    margin-bottom: 20px;
+    height: 500px;
+}
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+
+}
+.aspect-ratio-169{
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    transition: 0.3s;
+}
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100px;
+    left: 0;
+}
+.dot-container{
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+/*.dot{*/
+/*    height: 12px;*/
+/*    width: 12px;*/
+/*    background-color: #ccc ;*/
+/*    !*border-radius: 50%;*!*/
+/*    margin-right: 12px;*/
+/*    cursor:pointer ;*/
+/*}*/
+/*.dot.active{*/
+/*    background: #333;*/
+/*}*/
+/*.........product...............*/
+#wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.headline{
+    text-align: center;
+    margin: 20px 20px;
+}
+h3{
+    font-size: 18px;
+    color: #111 ;
+    padding: 10px 50px ;
+    text-transform: uppercase;
+    border: 1px solid #bebebe;
+    display: inline-block;
+    font-weight: 600;
+    /*top: auto;*/
+}
+ul.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.products li{
+    flex-basis: 25%;
+    padding-left: 15px;
+    /*padding-right: 15px;*/
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+ul.products li img{
+    max-width: 100%;
+    height: auto;
+}
+ul.products li .product-top{
+    position: relative;
+    overflow: hidden;
+}
+ul.products li .product-top .product-thumb{
+    display: block;
+}
+ul.products li .product-top .product-thumb img{
+    display: block;
+}
+ul.products li .product-top a.buy-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #446084;
+    color: #fff;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -36px;
+    width: 100%;
+    transition: 0.25s ease-in-out ;
+    opacity: 0.85;
+}
+ul.products li:hover a.buy-now {
+    bottom: 0px;
+}
+ul.products li .product-info{
+    padding: 10px 0px;
+}
+ul.products li .product-info a {
+    display: block;
+    text-decoration: none;
+}
+ul.products li .product-info a.product-cat{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    padding: 3px 0px;
+}
+ul.products li .product-info a.product-name{
+    color: #334862;
+    padding: 3px 0px;
+}
+ul.products li .product-info .product-prime{
+    color: #111;
+    padding: 2px 0px;
+    font-weight: 600;
+}
+h4{
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.panel-body{
+    width: 300px;
+    height: 350px;
+    text-align: center;
+}
+.panel-body input{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+.row input a{
+    padding-left: 20px;
+}
+
+/*............giỏ hàng..........*/
+.cart{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.cart table{
+    width: 100%;
+}
+.cart table thead tr th:first-child{
+    text-align: left;
+}
+.cart table tr td {
+    border-bottom: 1px solid #dddddd;
+    padding: 12px 0 ;
+}
+.cart table thead tr th:last-child {
+    text-align: right;
+}
+.cart table tbody tr td:last-child{
+    text-align: right;
+}
+/*............giỏ hàng...........*/
+.cart button{
+    margin-top: 12px;
+    height: 30px;
+    padding: 0 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: yellow;
+}
+.cart{
+    position: fixed;
+    height: 100vh;
+    width: 400px;
+    right: 0;
+    top: 0;;
+    background-color: tomato;
+    padding: 12px 20px;
+    overflow: scroll;
+    transition: all 0.3s ease;
+
+}
+.cart i{
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.footer{
+    background-color: #446084;
+    padding: 15px 0;
+    width: 100%;
+}
+.grid-row{
+    flex: 3;
+    display: flex;
+}
+.footer list{
+    padding-left: 0;
+    list-style: none;
+}
+.footer-item-link{
+    text-decoration: none;
+    padding: 3px 0;
+    display: block;
+}
+h5{
+    font-size: 18px;
+    padding: 70px;
+}
+h5{
+    padding-top: 20px;
+}
+.footer-item-link{
+padding: 0 70px;
+}
+.endweb{
+    text-align: center;
+    padding-top: 20px;
+}

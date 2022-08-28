@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shop Kid Store</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+<div class="than">
+    <div>
+        <header class="container">
+            <div class="logo">
+                <a href="" class="index.html">
+                <img src="image/logo1.png" alt="" width="80" height="70">
+                </a>
+            </div>
+            <div class="menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href=""> Áo </a>
+                    <ul class="submenu">
+                        <li><a href="">áo ba lỗ</a></li>
+                        <li><a href="">áo phông</a></li>
+                        <li><a href="">áo dài tay</a></li>
+                    </ul>
+                </li>
+                <li><a href=""> Váy</a>
+                    <ul class="submenu">
+                        <li><a href=""> váy công chúa</a></li>
+                        <li><a href="">váy hoa</a></li>
+                    </ul>
+                </li>
+                <li><a href=""> Sản phẩm bán chạy </a>
+                    <ul class="submenu">
+                        <li><a href="">áo phông</a></li>
+                        <li><a href="">váy công chúa</a></li>
+                    </ul>
+                </li>
+                <li><a href=""> Sản phẩm mới </a></li>
+                <li><a href="about.html"> Giới Thiệu </a></li>
+            </div>
+            <div class="other">
+                <li><input id="input" type="text" placeholder="tìm kiếm sản phẩm" style="height: 27px "/>
+                <li><a href="dangnhap.html">đăng nhập </a></li>
+
+                <!--       ...............    giỏ hàng........................-->
+                <li>
+                    <a onclick="showcart()">
+                        <img onclick="showCart()" class="demo" width="30" height="30"
+                             src="//theme.hstatic.net/200000465365/1000820510/14/shopping-cart.svg?v=159"
+                             alt="Giỏ hàng">
+                        <span class="giohang">0</span>
+                    </a>
+                </li>
+                <div class="showcart"></div>
+                <!--        .........................    -->
+            </div>
+        </header>
+    </div>
+    <!-- banner ảnh slider-->
+    <div class="content">
+        <div class="Slider">
+            <div class="aspect-ratio-169">
+                <img src="image/baner1.jpg">
+                <img src="image/baner2.jpg">
+                <img src="image/slide8.jpg">
+            </div>
+            <div class="dot-container">
+                <div class="dot active"></div>
+                <div class="dot active"></div>
+                <div class="dot active"></div>
+            </div>
+        </div>
+
+        <!--sản phẩm bán chạy-->
+        <div id="wrapper" align="center">
+            <div class="headline">
+                <h3>Sản Phẩm Bán Chạy</h3>
+            </div>
+            <ul class="products">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <div class="product-thumb">
+                                <img src="image/8.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>quần áo 1</h4>
+                            <p><span>100.000</span><sup>đ</sup></p>
+                        </div>
+                        <button>Đặt hàng</button>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <div class="product-thumb">
+                                <img src="image/1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>quần áo 2</h4>
+                            <p><span>90.000</span><sup>đ</sup></p>
+                        </div>
+                        <button>Đặt hàng</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <div class="product-thumb">
+                                <img src="image/3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>quần áo 3</h4>
+                            <p><span>110.000</span><sup>đ</sup></p>
+                        </div>
+                        <button>Đặt hàng</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <div class="product-thumb">
+                                <img src="image/4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>áo phông 1</h4>
+                            <p><span>120.000</span><sup>đ</sup></p>
+                        </div>
+                        <button>Đặt hàng</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <div class="product-thumb">
+                                <img src="image/5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>áo phông 2</h4>
+                            <p><span>100.000</span><sup>đ</sup></p>
+                        </div>
+                        <button>Đặt hàng</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <div class="product-thumb">
+                                <img src="image/6.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>áo phông 3</h4>
+                            <p><span>130.000</span><sup>đ</sup></p>
+                        </div>
+                        <button>Đặt hàng</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <div class="product-thumb">
+                                <img src="image/7.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>áo phông 4</h4>
+                            <p><span>120.000</span><sup>đ</sup></p>
+                        </div>
+                        <button>Đặt hàng</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <div class="product-thumb">
+                                <img src="image/9.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>áo phông 5</h4>
+                            <p><span>150.000</span><sup>đ</sup></p>
+                        </div>
+                        <button>Đặt hàng</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--    .......thêm giỏ hàng.........-->
+    <div class="cart" id="cart" style="visibility: hidden">
+        <button onclick="blockCart()">X</button>
+        <section>
+            <h3>Giỏ Hàng</h3>
+            <form action="">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Sản Phẩm</th>
+                        <th>Giá</th>
+                        <th>Số Lượng</th>
+                        <th>Chọn</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--            <tr>-->
+                    <!--                <td style="display: flex; align-items: center"><img style="width: 70px" src="image/8.png" alt="">quần áo 1</td>-->
+                    <!--                <td><span>120.000</span><sup>đ</sup></td>-->
+                    <!--                <td><input style="width: 30px; outline: none" type="number" value="1" min="1"></td>-->
+                    <!--                <td style="cursor: pointer">Xóa</td>-->
+                    <!--            </tr>-->
+                    <!--            <tr>-->
+                    <!--                <td style="display: flex; align-items: center"><img style="width: 70px" src="image/1.png" alt="">quần áo 2</td>-->
+                    <!--                <td><span>140.000</span><sup>đ</sup></td>-->
+                    <!--                <td><input style="width: 30px; outline: none" type="number" value="1" min="1"></td>-->
+                    <!--                <td style="cursor: pointer">Xóa</td>-->
+                    <!--            </tr>-->
+                    </tbody>
+                </table>
+                <div class="price-total">
+                    <p>Tổng Tiền: <span>0</span><sup>đ</sup></p>
+                </div>
+                <button>chốt đơn</button>
+            </form>
+        </section>
+    </div>
+    <div>
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid-row">
+                    <div class="grid-colum">
+                        <h5 class="heading">Dịch Vụ</h5>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Quần Áo</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Tư vấn Khách Hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid-colum">
+                        <h5 class="heading">tuyển dụng</h5>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Thông Tin</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Thông Báo</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid-colum">
+                        <h5 class="heading">khuyến mại</h5>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Sự Kiện </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Ngày Thành Lập</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid-colum">
+                        <h5 class="heading">liên Hệ</h5>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Địa Chỉ</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="https://www.facebook.com/shoptreem.loan/" class="footer-item-link">Liên Kết cửa hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid-colum">
+                        <h5 class="heading">Tin Tức</h5>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="https://vnexpress.net/" class="footer-item-link">Hàng Ngày</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="endweb" >
+                <p>2022- bản quyền thuộc về web trẻ em</p>
+            </div>
+        </footer>
+    </div>
+</div>
+
+</body>
+
+<script src="file.js"></script>
+<script src="giohang.js"></script>
+
+</html>
